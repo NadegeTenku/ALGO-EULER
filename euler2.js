@@ -28,7 +28,7 @@ function fib(n) {
     if (n == 1 || n == 2)
     return (f[n] = 1);
 
-
+}
 
 // function fibo_num(range){
 //     let i = 0;
