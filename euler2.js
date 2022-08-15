@@ -19,45 +19,65 @@
 
 // T (test)
 // Function to calculate all numbers in the Fibonacci sequence ranging from 1 - 4,000,000.
-function fibonacci_num(range){
-    let i = 0;
-    //loop for fibonacci
-    for (let i=0;i<range;i+n=n){
-        if(i%2==0){
-        sum += i;
-        }
-    }
-}
 
-    let even = fibonacci_num(4000000);
+var MAX = 4000000;
+var f = Array(MAX).fill(0);
+function fib(n) {
+    if (n == 0)
+    return 0;
+    if (n == 1 || n == 2)
+    return (f[n] = 1);
+
+
+
+// function fibo_num(range){
+//     let i = 0;
+//     //loop for fibonacci
+//     for (let i=0;i<range;i+n=n){
+//         if(i%2==0){
+//         sum += i;
+//         }
+//     }
+// }
+
+    let even = fibo_num(4000000);
     console.log("Even:", even);
 
 
-    // function multiples_of_3_or_5(range){
-    //     // accumulator variable
-    //     let sum = 0;
-    //     //loop for 3s
-    //     for(let i=3;i<range;i+=3){
-    //         //modulo operation returns 0 for multiples
-    //         if(i%3==0){
-    //             sum += i;
-    //         }
-    //     }
-    //     //loop for 5s
-    //     for(let i=5;i<range;i+=5){
-    //         //modulo operation returns 0 for multiples
-    //         //ignoring numbers already added (multiples of 3)
-    //         if(i%5==0 && i%3!==0){
-    //             sum += i;
-    //         }
-    //     }
-    //     return sum;
+
+    // var MAX = 1000;
+ 
+    // // Create an array for memoization
+    //  var f = Array(MAX).fill(0);
+ 
+    // // Returns n'th Fibonacci number using table f
+    // function fib(n) {
+ 
+    //     // Base cases
+    //     if (n == 0)
+    //         return 0;
+    //     if (n == 1 || n == 2)
+    //         return (f[n] = 1);
+ 
+    //     // If fib(n) is already computed
+    //     if (f[n] > 0)
+    //         return f[n];
+ 
+    //     var k = ((n & 1) > 0) ? (n + 1) / 2 : n / 2;
+ 
+    //     // Applying above formula [Note value n&1 is 1
+    //     // if n is odd, else 0].
+    //     f[n] = (n & 1) > 0 ? (fib(k) * fib(k) + fib(k - 1) * fib(k - 1)) : (2 * fib(k - 1) + fib(k)) * fib(k);
+ 
+    //     return f[n];
     // }
-    
-    // //T compare output to test cases
-    // let below10 = multiples_of_3_or_5(10);
-    // console.log('Below 10: ', below10);
-    // let below20 = multiples_of_3_or_5(20);
-    // console.log('Below 20: ', below20);
-    // let below1000 = multiples_of_3_or_5(1000);
-    // console.log("Below 1000:", below1000);
+
+
+    // // Computes value of first Fibonacci numbers
+    // function calculateSum(n) {
+    //     return fib(n + 2) - 1;
+    // }
+ 
+    // // Driver program to test above function
+    //     var n = 4;
+    //     document.write("Sum of Fibonacci numbers is : " + calculateSum(n) + "\n");
